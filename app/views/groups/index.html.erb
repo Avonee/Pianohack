@@ -1,0 +1,274 @@
+<h1>Let's Rock!!!<h1>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>未命名 1</title>
+
+</head>
+
+
+<body onkeypress="PlaySoundWhenKeyPress(event)">
+<div class='piano'>
+  <ul>
+    <li>
+      <div class='key' type="button" onclick="aud_play_pause('fa')"></div>
+      <div class='upper-key'></div>
+
+
+ <audio id="audio-fa"><source src="/doremi2/fa.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+function aud_play_pause(sound) {
+  var audio = document.getElementById("audio-" + sound);
+  audio.play();
+  setTimeout(function() {
+    audio.pause();
+    audio.currentTime = 0;
+  }, 500);
+}
+
+function PlaySoundWhenKeyPress(event, key) {
+      if(~['A', 'a'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-fa');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+
+      if(~['S', 's'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-so');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+
+      if(~['D', 'd'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-la');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+
+      if(~['F', 'f'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-si');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+
+      if(~['G', 'g'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-do');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+
+      if(~['H', 'h'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-re');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+
+      if(~['J', 'j'].indexOf(String.fromCharCode(event.keyCode))) {
+        console.log('abc');
+        var audio = document.getElementById('audio-mi');
+        audio.play();
+        setTimeout(function() {
+          audio.pause();
+          audio.currentTime = 0;
+        }, 1000);
+      }
+    }
+
+</script>
+
+    </li>
+    <li>
+      <div class='key'type="button" onclick="aud_play_pause('so')"></div>
+      <div class='upper-key'></div>
+
+ <audio id="audio-so"><source src="/doremi2/so.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+// function aud_play_pause() {
+//   var myAudio = document.getElementById("myAudio-so");
+//   if (myAudio.paused) {
+//     myAudio.play();
+//   } else {
+//     myAudio.pause();
+//   }
+// }
+</script>
+    </li>
+    <li>
+      <div class='key'type="button" onclick="aud_play_pause('la')"></div>
+      <div class='upper-key'></div>
+
+
+ <audio id="audio-la"><source src="/doremi2/la.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+// function aud_play_pause() {
+//   var myAudio = document.getElementById("myAudio-la");
+//   if (myAudio.paused) {
+//     myAudio.play();
+//   } else {
+//     myAudio.pause();
+//   }
+// }
+</script>
+    </li>
+    <li>
+      <div class='key'type="button" onclick="aud_play_pause('si')"></div>
+      <div class='upper-key'></div>
+
+
+ <audio id="audio-si"><source src="/doremi2/si.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+// function aud_play_pause() {
+//   var myAudio = document.getElementById("myAudio-si");
+//   if (myAudio.paused) {
+//     myAudio.play();
+//   } else {
+//     myAudio.pause();
+//   }
+// }
+</script>
+    </li>
+    <li>
+      <div class='key'type="button" onclick="aud_play_pause('do')"></div>
+      <div class='upper-key'></div>
+
+
+ <audio id="audio-do"><source src="/doremi2/do.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+// function aud_play_pause() {
+//   var myAudio = document.getElementById("myAudio-do");
+//   if (myAudio.paused) {
+//     myAudio.play();
+//   } else {
+//     myAudio.pause();
+//   }
+// }
+</script>
+    </li>
+    <li>
+      <div class='key'type="button" onclick="aud_play_pause('re')"></div>
+      <div class='upper-key'></div>
+
+ <audio id="audio-re"><source src="/doremi2/re.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+// function aud_play_pause() {
+//   var myAudio = document.getElementById("myAudio-re");
+//   if (myAudio.paused) {
+//     myAudio.play();
+//   } else {
+//     myAudio.pause();
+//   }
+// }
+</script>
+    </li>
+    <li>
+      <div class='key'type="button" onclick="aud_play_pause('mi')"></div>
+      <div class='upper-key'></div>
+
+
+ <audio id="audio-mi"><source src="/doremi2/mi.mp3" type='audio/mpeg'></audio>
+
+ <!-- Your user agent does not support the HTML5 Audio element. -->
+</audio>
+
+<script>
+// function aud_play_pause() {
+//   var myAudio = document.getElementById("myAudio-mi");
+//   if (myAudio.paused) {
+//     myAudio.play();
+//   } else {
+//     myAudio.pause();
+//   }
+// }
+</script>
+    </li>
+    <li>
+      <div class='key'></div>
+      <div class='upper-key'></div>
+    </li>
+    <li>
+      <div class='key'></div>
+      <div class='upper-key'></div>
+    </li>
+    <li>
+      <div class='key' >
+      </div>
+      <div class='upper-key'></div>
+    </li>
+    <li>
+      <div class='key'></div>
+      <div class='upper-key'></div>
+    </li>
+    <li>
+      <div class='key'></div>
+      <div class='upper-key'></div>
+    </li>
+    <li>
+      <div class='key'></div>
+      <div class='upper-key'></div>
+    </li>
+    <li>
+      <div class='key'></div>
+      <div class='upper-key'></div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>
